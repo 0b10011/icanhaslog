@@ -1,0 +1,19 @@
+[28-Jul-2015 11:21:22 America/Detroit] PHP Notice:  Hello world in foo.php on line 93
+[28-Jul-2015 11:21:22 America/Detroit] PHP Stack trace:
+[28-Jul-2015 11:21:22 America/Detroit] PHP   1. {main}() bar.php:0
+[28-Jul-2015 11:21:22 America/Detroit] PHP   2. require() bar.php:47
+[28-Jul-2015 11:21:22 America/Detroit] PHP   3. require() bar.php:2
+[28-Jul-2015 11:21:22 America/Detroit] PHP   4. c_consummo->loadSite() bar.php:116
+[28-Jul-2015 11:21:22 America/Detroit] PHP   5. call_user_func() bar.php:54
+[28-Jul-2015 11:21:22 America/Detroit] PHP   6. reviews->controller_review() bar.php:54
+[28-Jul-2015 11:21:22 America/Detroit] PHP   7. trigger_error() bar.php:93
+[28-Jul-2015 11:21:22 America/Detroit] PHP Fatal error:  Uncaught exception 'Exception' with message 'Hello world' in foo.php:94
+Stack trace:
+#0 [internal function]: reviews->controller_review(Array)
+#1 bar.php(54): call_user_func(Array, Array)
+#2 bar.php(116): c_consummo->loadSite()
+#3 bar.php(2): require('/home/brandon/P...')
+#4 bar.php(47): require('/home/brandon/P...')
+#5 {main}
+  thrown in bar.php on line 94
+Bad error message
